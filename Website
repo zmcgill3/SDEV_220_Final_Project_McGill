@@ -1,0 +1,25 @@
+<section class="worker-checkin">
+    <h2>Worker Check-In</h2>
+    <form action="checkin.php" method="post">
+        <label for="employee-name">Employee Name:</label>
+        <input type="text" id="employee-name" name="employee-name" required>
+
+        <label for="employee-id">Employee ID:</label>
+        <input type="text" id="employee-id" name="employee-id" required>
+
+        <label for="checkin-time">Check-In Time:</label>
+        <input type="datetime-local" id="checkin-time" name="checkin-time" required>
+
+        <input type="submit" value="Check-In"> <!-- Check-In button -->
+
+        <!-- Check-Out button -->
+        <input type="button" value="Check-Out" onclick="checkOut()">
+        
+        <!-- Reset button to clear the form -->
+        <input type="reset" value="Reset">
+    </form>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
