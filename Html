@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Check-in/Check-out Chart</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Your form code here -->
+
+        <!-- Table to display data -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Check-in Time</th>
+                    <th>Check-out Time</th>
+                </tr>
+            </thead>
+            <tbody id="chartBody">
+                {% for entry in entries %}
+                <tr>
+                    <td>{{ entry[1] }}</td>
+                    <td>{{ entry[2] }}</td>
+                    <td>{{ entry[3] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
