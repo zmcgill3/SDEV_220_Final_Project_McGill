@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStop Schedule Builder</title>
+</head>
+<body>
+    <h1>GameStop Schedule Builder</h1>
+
+    <h2>Employee Information</h2>
+    <form id="employeeForm">
+        <label for="employeeName">Name:</label>
+        <input type="text" id="employeeName" name="employeeName" required><br>
+
+        <label for="employeeEmail">Email:</label>
+        <input type="email" id="employeeEmail" name="employeeEmail" required><br>
+
+        <label for="employeeAvailability">Availability:</label>
+        <textarea id="employeeAvailability" name="employeeAvailability" rows="4" cols="50" required></textarea><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Schedule Builder</h2>
+    <p>Select the days you need employees to work:</p>
+    <form id="scheduleForm">
+        <label for="monday">Monday</label>
+        <input type="checkbox" id="monday" name="day" value="Monday"><br>
+
+        <label for="tuesday">Tuesday</label>
+        <input type="checkbox" id="tuesday" name="day" value="Tuesday"><br>
+
+        <label for="wednesday">Wednesday</label>
+        <input type="checkbox" id="wednesday" name="day" value="Wednesday"><br>
+
+        <label for="thursday">Thursday</label>
+        <input type="checkbox" id="thursday" name="day" value="Thursday"><br>
+
+        <label for="friday">Friday</label>
+        <input type="checkbox" id="friday" name="day" value="Friday"><br>
+
+        <label for="saturday">Saturday</label>
+        <input type="checkbox" id="saturday" name="day" value="Saturday"><br>
+
+        <label for="sunday">Sunday</label>
+        <input type="checkbox" id="sunday" name="day" value="Sunday"><br>
+
+        <button type="submit">Generate Schedule</button>
+    </form>
+
+    <!-- Python for handling form submissions and schedule generation would go here -->
+
+</body>
+</html>
+
