@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStop Schedule Builder</title>
+    <style>
+        .submit-button {
+            margin-top: 16px;
+            background-color: rgb(255, 7, 7);
+            color: white;
+            padding: 9px;
+            border-width: 1px;
+            font-size: 15px;
+            border-radius: 14px;
+            cursor: pointer;
+        }
+         .generate-button {
+            margin-top: 47px;
+            background-color: rgb(70, 70, 70);
+            color: white;
+            padding: 9px;
+            border-width: 1px;
+            font-size: 15px;
+            border-radius: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:red;">GameStop Schedule Builder</h1>
+
+    <h2>Employee Information</h2>
+
+    <form action="add" method="GET" id="employeeForm">
+        <label for="employeeName">Name:</label>
+        <input type="text" id="employeeName" name="employeeName" required><br>
+        <h2>Schedule Builder</h2>
+        <p>Select the days you need employees to work:</p>
+
+        <label for="sunday">Sunday</label>
+        <input type="hidden" name="sunday" value="0" />
+        <input type="checkbox" id="sunday" name="sunday" value="Sunday"><br>
+
+        <label for="monday">Monday</label>
+        <input type="hidden" name="monday" value="0" />
+        <input type="checkbox" id="monday" name="monday" value="Monday"><br>
+
+
+        <label for="tuesday">Tuesday</label>
+        <input type="hidden" name="tuesday" value="0" />
+        <input type="checkbox" id="tuesday" name="tuesday" value="Tuesday"><br>
+
+
+        <label for="wednesday">Wednesday</label>
+        <input type="hidden" name="wednesday" value="0" />
+        <input type="checkbox" id="wednesday" name="wednesday" value="Wednesday"><br>
+
+
+        <label for="thursday">Thursday</label>
+        <input type="hidden" name="thursday" value="0" />
+        <input type="checkbox" id="thursday" name="thursday" value="Thursday"><br>
+
+
+        <label for="friday">Friday</label>
+        <input type="hidden" name="friday" value="0" />
+        <input type="checkbox" id="friday" name="friday" value="Friday"><br>
+
+
+        <label for="saturday">Saturday</label>
+        <input type="hidden" name="saturday" value="0" />
+        <input type="checkbox" id="saturday" name="saturday" value="Saturday"><br>
+
+
+
+        <button class="submit-button" type="submit">Add Employee Data</button>
+    </form>
+    <form action="display" method="GET">
+        <button class="generate-button" type="submit">Generate Schedule</button>
+    </form>
+
+
+    <!-- Python for handling form submissions and schedule generation would go here -->
+
+</body>
+</html>
